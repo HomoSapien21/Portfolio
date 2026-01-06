@@ -9,11 +9,12 @@ interface Props {
 
 function Banner({ name, designation }: Props) {
   return (
-    <section id="banner" className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-background via-secondary/10 to-background pt-16">
+    <section id="banner" className="relative h-screen flex items-center justify-center overflow-hidden bg-background pt-16">
 
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
-        <div className="absolute top-0 -left-4 w-72 h-72 bg-primary rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-0 -right-4 w-96 h-96 bg-primary rounded-full blur-[150px] animate-pulse" />
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,_hsl(var(--primary)/0.15),_transparent_70%)]" />
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-primary/10 rounded-full blur-[100px] animate-pulse" />
+        <div className="absolute bottom-0 -right-4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] animate-pulse" />
       </div>
 
       <div className="container relative z-10 px-6 text-center">
