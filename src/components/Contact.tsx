@@ -12,13 +12,13 @@ interface Props {
 function Contact({ contact }: Props) {
     return (
         <section id="contact" className="section-padding bg-secondary/30">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-4 sm:px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
-                    className="max-w-4xl mx-auto"
+                    className="max-w-5xl mx-auto"
                 >
                     <h2 className="heading-lg">Get In Touch</h2>
 
@@ -33,9 +33,9 @@ function Contact({ contact }: Props) {
                                     <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
                                         <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
                                     </div>
-                                    <div className="min-w-0 flex-grow">
+                                    <div className="min-w-0 flex-grow w-full">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Email Me</h3>
-                                        <p className="text-sm sm:text-base font-bold italic group-hover:text-secondary break-all">{contact.email}</p>
+                                        <p className="text-sm sm:text-base md:text-lg font-bold italic group-hover:text-secondary truncate">{contact.email}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -51,9 +51,9 @@ function Contact({ contact }: Props) {
                                     <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
                                         <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
                                     </div>
-                                    <div className="min-w-0 flex-grow">
+                                    <div className="min-w-0 flex-grow w-full">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Call Me</h3>
-                                        <p className="text-sm sm:text-base font-bold italic group-hover:text-secondary">{contact.phone}</p>
+                                        <p className="text-sm sm:text-base md:text-lg font-bold italic group-hover:text-secondary truncate">{contact.phone}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -71,9 +71,9 @@ function Contact({ contact }: Props) {
                                     <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
                                         <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
                                     </div>
-                                    <div className="min-w-0 flex-grow">
+                                    <div className="min-w-0 flex-grow w-full">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">LinkedIn</h3>
-                                        <p className="text-sm sm:text-base font-bold italic group-hover:text-secondary">Connect</p>
+                                        <p className="text-sm sm:text-base md:text-lg font-bold italic group-hover:text-secondary truncate">Connect</p>
                                     </div>
                                 </CardContent>
                             </Card>
