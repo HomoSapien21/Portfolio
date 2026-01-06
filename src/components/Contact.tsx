@@ -35,7 +35,7 @@ function Contact({ contact }: Props) {
                                     </div>
                                     <div className="min-w-0 flex-grow">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Email Me</h3>
-                                        <p className="text-lg sm:text-xl font-bold italic group-hover:text-secondary truncate break-all">{contact.email}</p>
+                                        <p className="text-sm sm:text-base font-bold italic group-hover:text-secondary break-all">{contact.email}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -53,7 +53,7 @@ function Contact({ contact }: Props) {
                                     </div>
                                     <div className="min-w-0 flex-grow">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Call Me</h3>
-                                        <p className="text-lg sm:text-xl font-bold italic group-hover:text-secondary truncate">{contact.phone}</p>
+                                        <p className="text-sm sm:text-base font-bold italic group-hover:text-secondary">{contact.phone}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -73,7 +73,7 @@ function Contact({ contact }: Props) {
                                     </div>
                                     <div className="min-w-0 flex-grow">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">LinkedIn</h3>
-                                        <p className="text-lg sm:text-xl font-bold italic group-hover:text-secondary truncate">Connect</p>
+                                        <p className="text-sm sm:text-base font-bold italic group-hover:text-secondary">Connect</p>
                                     </div>
                                 </CardContent>
                             </Card>

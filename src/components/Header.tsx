@@ -52,7 +52,7 @@ function Header() {
                         </SheetTrigger>
                         <SheetContent side="right" className="w-[250px] sm:w-[300px]">
                             <SheetHeader>
-                                <SheetTitle className="text-left py-4">Navigation</SheetTitle>
+                                <SheetTitle className="text-left py-4 px-4">Navigation</SheetTitle>
                             </SheetHeader>
                             <nav className="flex flex-col gap-6 mt-8">
                                 {navLinks.map((link) => (
