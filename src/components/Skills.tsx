@@ -34,7 +34,7 @@ function Skills({ skills }: Props) {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.05 }}
                             >
-                                <Badge className="px-6 py-3 text-lg font-semibold bg-primary text-secondary hover:bg-primary/90 cursor-default border-none shadow-lg">
+                                <Badge className="px-6 py-3 text-lg font-semibold bg-primary text-secondary hover:bg-primary/90 border-none shadow-lg">
                                     {skill}
                                 </Badge>
                             </motion.div>
