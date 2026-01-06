@@ -56,7 +56,7 @@ function Projects({ projects }: Props) {
                                             <CardTitle className="text-2xl font-bold italic tracking-tight">{project.title}</CardTitle>
                                         </CardHeader>
                                         <CardContent className="flex-grow">
-                                            <p className="text-foreground/70 line-clamp-3">
+                                            <p className="text-foreground/70">
                                                 {project.description}
                                             </p>
                                         </CardContent>
