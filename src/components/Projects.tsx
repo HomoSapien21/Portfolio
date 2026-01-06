@@ -60,7 +60,7 @@ function Projects({ projects }: Props) {
                                         <Button className="w-full" asChild>
                                             <a href={project["github link"]} target="_blank" rel="noopener noreferrer">
                                                 <ExternalLink className="mr-2 h-4 w-4" />
-                                                Live Demo
+                                                View On GitHub
                                             </a>
                                         </Button>
                                     </CardFooter>
