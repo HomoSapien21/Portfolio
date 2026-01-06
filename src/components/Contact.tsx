@@ -29,9 +29,9 @@ function Contact({ contact }: Props) {
                             className="block"
                         >
                             <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group h-full">
-                                <CardContent className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 text-center sm:text-left">
-                                    <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
-                                        <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
+                                <CardContent className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 p-5 sm:p-6 text-center sm:text-left">
+                                    <div className="p-2 sm:p-3 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
+                                        <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-secondary" />
                                     </div>
                                     <div className="min-w-0 flex-grow w-full">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Email Me</h3>
@@ -47,9 +47,9 @@ function Contact({ contact }: Props) {
                             className="block"
                         >
                             <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group h-full">
-                                <CardContent className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 text-center sm:text-left">
-                                    <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
-                                        <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
+                                <CardContent className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 p-5 sm:p-6 text-center sm:text-left">
+                                    <div className="p-2 sm:p-3 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
+                                        <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-secondary" />
                                     </div>
                                     <div className="min-w-0 flex-grow w-full">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Call Me</h3>
@@ -67,9 +67,9 @@ function Contact({ contact }: Props) {
                             className="block sm:col-span-2 lg:col-span-1"
                         >
                             <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group h-full">
-                                <CardContent className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 text-center sm:text-left">
-                                    <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
-                                        <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
+                                <CardContent className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 p-5 sm:p-6 text-center sm:text-left">
+                                    <div className="p-2 sm:p-3 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
+                                        <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-secondary" />
                                     </div>
                                     <div className="min-w-0 flex-grow w-full">
                                         <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">LinkedIn</h3>
