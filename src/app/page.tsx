@@ -4,16 +4,18 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Header from "@/components/Header";
-import { getInfo,getProjects } from "@/lib/getData";
+import { getInfo, getProjects } from "@/lib/getData";
 import { Info, Project } from "@/types";
+
+export const revalidate = 0;
 
 export default async function Home() {
   const info: Info | null = await getInfo();
   const projects: Project[] = await getProjects();
 
-  if(!info) return <p>No data found</p>
+  if (!info) return <p>No data found</p>
 
-  return(
+  return (
     <main>
       <Header />
       <Banner name={info.name} designation={info.designation} />
