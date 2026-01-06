@@ -22,20 +22,20 @@ function Contact({ contact }: Props) {
                 >
                     <h2 className="heading-lg">Get In Touch</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
                         <motion.a
                             href={`mailto:${contact.email}`}
                             whileHover={{ y: -5, scale: 1.02 }}
                             className="block"
                         >
-                            <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group">
-                                <CardContent className="flex items-center gap-6 p-8">
-                                    <div className="p-4 rounded-full bg-primary/10 group-hover:bg-background/20">
-                                        <Mail className="w-8 h-8 text-primary group-hover:text-secondary" />
+                            <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group h-full">
+                                <CardContent className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 text-center sm:text-left">
+                                    <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
+                                        <Mail className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
                                     </div>
-                                    <div>
-                                        <h3 className="text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Email Me</h3>
-                                        <p className="text-xl font-bold italic group-hover:text-secondary truncate">{contact.email}</p>
+                                    <div className="min-w-0 flex-grow">
+                                        <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Email Me</h3>
+                                        <p className="text-lg sm:text-xl font-bold italic group-hover:text-secondary truncate break-all">{contact.email}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -46,14 +46,14 @@ function Contact({ contact }: Props) {
                             whileHover={{ y: -5, scale: 1.02 }}
                             className="block"
                         >
-                            <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group">
-                                <CardContent className="flex items-center gap-6 p-8">
-                                    <div className="p-4 rounded-full bg-primary/10 group-hover:bg-background/20">
-                                        <Phone className="w-8 h-8 text-primary group-hover:text-secondary" />
+                            <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group h-full">
+                                <CardContent className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 text-center sm:text-left">
+                                    <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
+                                        <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
                                     </div>
-                                    <div>
-                                        <h3 className="text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Call Me</h3>
-                                        <p className="text-xl font-bold italic group-hover:text-secondary">{contact.phone}</p>
+                                    <div className="min-w-0 flex-grow">
+                                        <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">Call Me</h3>
+                                        <p className="text-lg sm:text-xl font-bold italic group-hover:text-secondary truncate">{contact.phone}</p>
                                     </div>
                                 </CardContent>
                             </Card>
@@ -64,16 +64,16 @@ function Contact({ contact }: Props) {
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ y: -5, scale: 1.02 }}
-                            className="block"
+                            className="block sm:col-span-2 lg:col-span-1"
                         >
-                            <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group">
-                                <CardContent className="flex items-center gap-6 p-8">
-                                    <div className="p-4 rounded-full bg-primary/10 group-hover:bg-background/20">
-                                        <Linkedin className="w-8 h-8 text-primary group-hover:text-secondary" />
+                            <Card className="border-none shadow-lg bg-background hover:bg-primary transition-all duration-300 group h-full">
+                                <CardContent className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-6 sm:p-8 text-center sm:text-left">
+                                    <div className="p-3 sm:p-4 rounded-full bg-primary/10 group-hover:bg-background/20 shrink-0">
+                                        <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 text-primary group-hover:text-secondary" />
                                     </div>
-                                    <div>
-                                        <h3 className="text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">LinkedIn</h3>
-                                        <p className="text-xl font-bold italic group-hover:text-secondary truncate">Connect</p>
+                                    <div className="min-w-0 flex-grow">
+                                        <h3 className="text-xs sm:text-sm font-semibold text-primary/60 group-hover:text-secondary/70 uppercase tracking-widest mb-1">LinkedIn</h3>
+                                        <p className="text-lg sm:text-xl font-bold italic group-hover:text-secondary truncate">Connect</p>
                                     </div>
                                 </CardContent>
                             </Card>
